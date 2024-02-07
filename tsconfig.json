@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+
+    /* Language and Environment */
+    "target": "ESNext",
+    "baseUrl": "./src",
+
+    /* Modules */
+    "module": "commonjs",
+ 
+    /* Emit */
+    "outDir": "./dist",
+    "esModuleInterop": true,  
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    //"strict": true,
+    "skipLibCheck": true
+  }
+}

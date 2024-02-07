@@ -1,12 +1,11 @@
-const express = require('express');
-const dotenv = require('dotenv');
+import { Request, Response } from "express";
+require("dotenv").config();
 
-dotenv.config();
+const app = require('./index');
 
-const app = express();
 const port = process.env.PORT || 5000;
 
-app.get('/init', (req, res) => {
+app.get('/init', (req: Request, res: Response) => {
     res.send(`you summouned me !`);
 });
 
