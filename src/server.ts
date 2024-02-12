@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 require("dotenv").config();
 
-const app = require('./index');
+const app = require('../index');
 
 const port = process.env.PORT || 5000;
 
