@@ -1,15 +1,15 @@
 import { Request, Response } from "express";
-require("dotenv").config();
+import dotenv from "dotenv";
+import app from "../index";
 
-const app = require('../index');
+dotenv.config();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 9001;
 
-app.get('/init', (req: Request, res: Response) => {
-    res.send(`you summouned me !`);
+app.get("/api", (req: Request, res: Response) => {
+  res.send("you summouned me !");
 });
-
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
-}); 
+});

@@ -1,14 +1,12 @@
-import { Express} from "express";
+import express, { Express } from 'express';
+import dotenv from 'dotenv';
 
-const express = require('express');
-const dotenv = require('dotenv');;
-
-dotenv.config()
+dotenv.config();
 
 const app: Express = express(); 
 
-//using the dependancies
+//using the dependencies
 app.use(express.json());
 
 //exporting app
-module.exports = app;
+export default app;

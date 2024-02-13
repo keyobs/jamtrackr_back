@@ -1,0 +1,7 @@
+/coverage/
+/node_modules/
+**/__testFiles__/
+/public/
+build/
+dist/
+view raw
